@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 연한 빨간색 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#B3FF7F7F"/> <!-- 75% 투명한 연한 빨간색 -->
+    <corners android:radius="16dp" />
+</shape>

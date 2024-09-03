@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_background_light_green.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#B3B2FF66"/> <!-- 75% 투명한 연한 녹색 -->
+    <corners android:radius="16dp" />
+</shape>

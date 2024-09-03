@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/personalTestBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_backbutton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:fontFamily="@font/mango"
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="유형검사"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ScrollView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_above="@+id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="나는 일을 몰아서 하는편이다."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <!-- 답변 버튼들을 담을 그룹 -->
+            <RadioGroup
+                android:id="@+id/answerRadioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우그렇다"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긍정"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우아니다" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:text="휴일은 꼭 필요하다고 생각한다"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <!-- 답변 버튼들을 담을 그룹 -->
+            <RadioGroup
+                android:id="@+id/answerRadioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우그렇다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긍정"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통" />
+
+                <RadioButton
+                    android:id="@+id/answerOption2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우아니다" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:text="하루에 여러가지 일을 하는 편이다"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <!-- 답변 버튼들을 담을 그룹 -->
+            <RadioGroup
+                android:id="@+id/answerRadioGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우그렇다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긍정"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption3_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우아니다" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:text="일을 오래 쉬면 어떻게 했는지 잊어버린다"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <!-- 답변 버튼들을 담을 그룹 -->
+            <RadioGroup
+                android:id="@+id/answerRadioGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우그렇다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긍정"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption4_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우아니다" />
+
+            </RadioGroup>
+
+            <!-- 답변 버튼들을 담을 그룹 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:text="나는 휴일 다음날 일하기 싫은편이다"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/answerRadioGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우그렇다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="긍정"/>
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption5_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니다" />
+
+                <RadioButton
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption5_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매우아니다" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/questionTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:text="쉬는 날을 정해주세요."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/answerRadioGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 답변 옵션 -->
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="월" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="화" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="토" />
+
+                <CheckBox
+                    android:fontFamily="@font/mango"
+                    android:id="@+id/answerOption6_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 버튼 컨테이너 -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="10dp">
+
+        <android.widget.Button
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/mango"
+            android:id="@+id/skipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="건너뛰기" />
+
+        <android.widget.Button
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/mango"
+            android:id="@+id/storeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="저장"/>
+    </LinearLayout>
+
+</RelativeLayout>

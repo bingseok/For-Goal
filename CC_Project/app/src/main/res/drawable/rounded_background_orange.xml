@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_background_light_orange.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#B3FFA500"/> <!-- 75% 투명한 연한 오렌지색 -->
+    <corners android:radius="16dp" />
+</shape>
+

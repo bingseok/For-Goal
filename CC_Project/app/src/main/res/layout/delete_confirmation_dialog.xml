@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삭제할 항목을 선택해 주세요."
+        android:textColor="@color/black"
+        android:fontFamily="@font/mango"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/delete_items_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp" />
+
+    <android.widget.Button
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/confirm_delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="삭제" />
+
+    <android.widget.Button
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/add_spec_goal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="추가" />
+</LinearLayout>

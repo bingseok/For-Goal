@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- popup_layout.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <android.widget.Button
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/button_modify_notification_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  알림 시간 수정  " />
+
+    <android.widget.Button
+        android:layout_marginTop="2dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/button_recheck_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="유형 재검사" />
+
+    <android.widget.Button
+        android:layout_marginTop="2dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/button_modify_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임 수정" />
+
+    <android.widget.Button
+        android:layout_marginTop="2dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/mango"
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/centerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/centerImageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/white"
+            tools:viewBindingIgnore="true">
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/mango"
+                android:textColor="@android:color/black"
+                android:id="@+id/authMainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+
+            <android.widget.Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/main_color"
+                android:text="로그아웃"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:fontFamily="@font/mango"
+                android:id="@+id/authEmailEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                android:visibility="gone" />
+
+            <EditText
+                android:fontFamily="@font/mango"
+                android:id="@+id/authPasswordEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="비밀번호 - 6자 이상"
+                android:inputType="textPassword"
+                android:visibility="gone" />
+
+            <android.widget.Button
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mango"
+                android:id="@+id/loginBtn"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:backgroundTint="@color/main_color"
+                android:text="로그인"
+                android:background="@drawable/round_button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:fontFamily="@font/mango"
+                android:id="@+id/googleLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/android_google"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <android.widget.Button
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mango"
+                android:id="@+id/goSignInBtn"
+                android:layout_width="228dp"
+                android:layout_height="48dp"
+                android:background="@drawable/round_button"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/main_color"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/mango"
+                android:id="@+id/signBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/main_color"
+                android:text="가입"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

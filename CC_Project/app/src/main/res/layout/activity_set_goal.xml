@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setGoalActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/setGoalBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_backbutton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <!--    목표입력-->
+    <TextView
+        android:fontFamily="@font/mango"
+        android:id="@+id/goal_text"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="목표입력"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/goal_text">
+
+        <!--    목표명-->
+        <TextView
+            android:fontFamily="@font/mango"
+            android:text="목표명"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:fontFamily="@font/mango"
+            android:id="@+id/goalName"
+            android:textSize="20sp"
+            android:hint="목표명을 입력하세요"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--    시작일-->
+        <TextView
+            android:fontFamily="@font/mango"
+            android:text="기간"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp">
+
+            <ImageButton
+                android:id="@+id/edit_date_btn"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_calender_icon"/>
+
+            <TextView
+                android:fontFamily="@font/mango"
+                android:id="@+id/edit_date"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@drawable/border"
+                android:layout_marginRight="35sp"
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+        </RelativeLayout>
+        <!--    저장버튼-->
+        <ImageButton
+            android:id="@+id/set_next_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_right_arrow"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</RelativeLayout>
