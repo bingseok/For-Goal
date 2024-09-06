@@ -1,5 +1,5 @@
 # For_Goal
-<p align="center"><img width="600" alt="image" src="https://github.com/user-attachments/assets/ea0f3261-a5e5-4ba7-9376-cabefe0aa782"></p>
+<p align="center"><img width="1000" alt="image" src="https://github.com/user-attachments/assets/ea0f3261-a5e5-4ba7-9376-cabefe0aa782"></p>
 
 ## 프로젝트 소개
 For_Goal은 사용자가 프로젝트 정보를 입력하면 사용자의 성향에 맞춘 세부목표를 만들어 체크 리스트를 자동으로 생성해주는 서비스이다.
